@@ -6,74 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Gian L. Mendiguarin Portfolio</title>
     <style>
+        /* General Styling */
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4; /* Light gray background for a professional look */
-            color: #333; /* Dark text for readability */
+            font-family: 'Helvetica', 'Arial', sans-serif; /* Modern, professional font */
+            background-color: #f4f4f4; /* Light gray background to improve contrast */
+            color: #333; /* Dark gray text for readability */
             margin: 0;
             padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff; /* White background for content */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            border-top: 10px solid #AD5000; /* Professional orange accent */
-        }
-        .profile-img {
-            width: 300px;
-            height: 400px;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border-radius: 50px;
+            line-height: 1.6; /* Spacing between lines of text */
         }
 
+        /* Container Styling */
+        .container {
+            max-width: 900px; /* Makes content more readable by reducing width */
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff; /* Clean white background for content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-top: 6px solid #AD5000; /* Accent orange color for professionalism */
+            border-radius: 8px; /* Rounded corners for a soft, polished feel */
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 4px solid #AD5000; /* Subtle border with the accent color */
+        }
+
+        /* Heading Styling */
         h1 {
-            color: #AD5000; /* Orange for headings to highlight */
-            font-size: 2em;
+            font-size: 2.5em; /* Larger font size for the main header */
+            color: #AD5000; /* Use orange for the main heading to stand out */
+            text-align: center;
+            margin-bottom: 20px;
         }
+        
         h2 {
-            color: #ffffff; 
+            font-size: 1.8em; /* Slightly smaller subheading font */
+            color: #444; /* Dark gray for subheadings to create contrast */
+            margin-top: 30px;
+            text-align: center;
         }
+
+        /* Paragraph Styling */
         p {
             font-size: 18px;
-            line-height: 1.6;
+            color: #555; /* Soft dark gray for body text */
+            text-align: justify; /* Justify text to make it look professional */
+            margin-bottom: 20px;
+            line-height: 1.8; /* Increased line height for readability */
         }
+
+        /* Home Section */
         .home {
             text-align: center;
         }
+
+        /* Button Styling */
+        .btn {
+            background-color: #AD5000; /* Orange background for buttons */
+            color: #fff; /* White text for good contrast */
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Button Hover Effect */
+        .btn:hover {
+            background-color: #933e00; /* Darker shade of orange when hovered */
+        }
+
+        /* Section Styling */
         .description, .contact {
             margin-top: 20px;
-            display: none;
+            display: none; /* Hide the sections by default */
         }
+
+        /* Contact List Styling */
         .contact ul {
             list-style-type: none;
             padding: 0;
-        }
-        .contact ul li {
             font-size: 16px;
+            color: #444; /* Darker color for contact list items */
+        }
+
+        .contact ul li {
             margin-bottom: 10px;
         }
+
         .contact ul li a {
-            color: #AD5000;
+            color: #AD5000; /* Accent orange color for links */
             text-decoration: none;
+            font-weight: bold;
         }
+
         .contact ul li a:hover {
-            text-decoration: underline;
-        }
-        .btn {
-            background-color: #AD5000; /* Use the orange color for buttons */
-            color: #fff; /* White text on buttons for contrast */
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .btn:hover {
-            background-color: #933e00; /* Darker orange for hover effect */
+            text-decoration: underline; /* Underline links when hovered for emphasis */
         }
     </style>
 </head>
@@ -85,6 +121,7 @@
             <h1>Hi, I'm Gian</h1>
             <img src="pic.jpg" alt="Gian L. Mendiguarin's Profile Photo" class="profile-img">
             <h2>Gian L. Mendiguarin</h2>
+            <p>Welcome to my personal portfolio! I'm an Information Technology student with a passion for coding, gaming, and technology. Let's explore!</p>
             <button class="btn" onclick="toggleSection('about')">About Me</button>
             <button class="btn" onclick="toggleSection('contact')">Contact</button>
         </div>
@@ -92,7 +129,7 @@
         <!-- About Section -->
         <div class="description" id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is Gian L. Mendiguarin, an Information Technology student currently studying at PHINMA University of Pangasinan. I have a deep passion for technology, including coding, editing, and mobile gaming, which I discovered back in high school. I am constantly seeking opportunities to grow and enhance my technical skills. My journey in IT is focused on using creativity and problem-solving to contribute to the evolving tech industry.</p>
+            <p>Hello! My name is Gian L. Mendiguarin, and I’m an Information Technology student at PHINMA University of Pangasinan. I have a strong interest in coding, tech, and mobile gaming, which I discovered in high school. I'm eager to continue learning and developing my skills to contribute to the tech world.</p>
             <button class="btn" onclick="showHome()">Back to Home</button>
         </div>
 
