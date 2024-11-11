@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gian L. Mendiguarin Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #AD5000;
+        }
+        .profile-img {
+            width: 300px; /* Set to your image's width */
+            height: 400px; /* Set to your image's height */
+            object-fit: cover; /* Maintains aspect ratio while covering the area */
+            margin-bottom: 20px;
+            border: 3px solid #AD5000;
+            border-radius: 50%;
+        }
+        h1, h2 {
+            color: #AD5000;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .home {
+            text-align: center;
+        }
+        .description, .contact {
+            margin-top: 20px;
+            display: none; /* Hide by default */
+        }
+        .contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .contact ul li a {
+            color: #AD5000;
+            text-decoration: none;
+        }
+        .contact ul li a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            background-color: #AD5000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #933e00; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Home Section -->
+        <div class="home" id="home">
+            <h1>Hi, I'm Gian</h1>
+            <img src="pic.jpg" alt="Gian L. Mendiguarin's Profile Photo" class="profile-img">
+            <h2>Gian L. Mendiguarin</h2>
+            <button class="btn" onclick="toggleSection('about')">About Me</button>
+            <button class="btn" onclick="toggleSection('contact')">Contact</button>
+        </div>
+
+        <!-- About Section -->
+        <div class="description" id="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Gian L. Mendiguarin, an Information Technology student currently studying at PHINMA University of Pangasinan. I have a deep passion for technology, including coding, editing, and mobile gaming, which I discovered back in high school. I am constantly seeking opportunities to grow and enhance my technical skills. My journey in IT is focused on using creativity and problem-solving to contribute to the evolving tech industry.</p>
+            <button class="btn" onclick="showHome()">Back to Home</button>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/Gian.L.Mendiguarin" target="_blank">Facebook: Gian L. Mendiguarin</a></li>
+                <li><a href="https://www.linkedin.com/in/gian-mendiguarin" target="_blank">LinkedIn: Gian Mendiguarin</a></li>
+                <li><a href="https://www.instagram.com/__giaaan_" target="_blank">Instagram: __giaaan_</a></li>
+                <li><a href="mailto:gianmendiguarin2006@gmail.com">Email: gianmendiguarin2006@gmail.com</a></li>
+            </ul>
+            <button class="btn" onclick="showHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            // Hide both sections first
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(section).style.display = 'block';
+        }
+
+        function showHome() {
+            // Hide About and Contact sections
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            
+            // Show Home section
+            document.getElementById('home').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
