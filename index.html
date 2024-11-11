@@ -91,4 +91,41 @@
         <div class="description" id="about">
             <h2>About Me</h2>
             <p>Hello! My name is Gian L. Mendiguarin, an Information Technology student currently studying at PHINMA University of Pangasinan. I have a deep passion for technology, including coding, editing, and mobile gaming, which I discovered back in high school. I am constantly seeking opportunities to grow and enhance my technical skills. My journey in IT is focused on using creativity and problem-solving to contribute to the evolving tech industry.</p>
-            <button class="btn" onclick="sho
+            <button class="btn" onclick="shoshowHome()">Back to Home</button>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/Gian.L.Mendiguarin" target="_blank">Facebook: Gian L. Mendiguarin</a></li>
+                <li><a href="https://www.linkedin.com/in/gian-mendiguarin" target="_blank">LinkedIn: Gian Mendiguarin</a></li>
+                <li><a href="https://www.instagram.com/__giaaan_" target="_blank">Instagram: __giaaan_</a></li>
+                <li><a href="mailto:gianmendiguarin2006@gmail.com">Email: gianmendiguarin2006@gmail.com</a></li>
+            </ul>
+            <button class="btn" onclick="showHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            // Hide both sections first
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            
+            // Show the selected section
+            document.getElementById(section).style.display = 'block';
+        }
+
+        function showHome() {
+            // Hide About and Contact sections
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            
+            // Show Home section
+            document.getElementById('home').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
