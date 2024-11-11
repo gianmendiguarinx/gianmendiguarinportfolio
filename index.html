@@ -6,117 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Gian L. Mendiguarin Portfolio</title>
     <style>
-        /* General Styling */
         body {
-            font-family: 'Helvetica', 'Arial', sans-serif; /* Modern, professional font */
-            background-color: #f4f4f4; /* Light gray background to improve contrast */
-            color: #333; /* Dark gray text for readability */
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6; /* Spacing between lines of text */
+            line-height: 1.6;
         }
-
-        /* Container Styling */
         .container {
-            max-width: 900px; /* Makes content more readable by reducing width */
+            max-width: 900px;
             margin: 50px auto;
             padding: 30px;
-            background-color: #fff; /* Clean white background for content */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            border-top: 6px solid #AD5000; /* Accent orange color for professionalism */
-            border-radius: 8px; /* Rounded corners for a soft, polished feel */
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #AD5000;
+            border-radius: 8px;
         }
-
-        /* Profile Image Styling */
         .profile-img {
             width: 280px;
             height: 280px;
             object-fit: cover;
             margin-bottom: 20px;
             border-radius: 50%;
-            border: 4px solid #AD5000; /* Subtle border with the accent color */
+            border: 4px solid #AD5000;
         }
-
-        /* Heading Styling */
         h1 {
-            font-size: 2.5em; /* Larger font size for the main header */
-            color: #AD5000; /* Use orange for the main heading to stand out */
+            font-size: 2.5em;
+            color: #AD5000;
             text-align: center;
             margin-bottom: 20px;
         }
-        
         h2 {
-            font-size: 1.8em; /* Slightly smaller subheading font */
-            color: #ad5000; /* Dark gray for subheadings to create contrast */
+            font-size: 1.8em;
+            color: #ad5000;
             margin-top: 30px;
             text-align: center;
         }
-
-        /* Paragraph Styling */
         p {
             font-size: 18px;
-            color: #555; /* Soft dark gray for body text */
-            text-align: justify; /* Justify text to make it look professional */
+            color: #555;
+            text-align: justify;
             margin-bottom: 20px;
-            line-height: 1.8; /* Increased line height for readability */
+            line-height: 1.8;
         }
-
-        /* Home Section */
         .home {
             text-align: center;
         }
-
-        /* Button Styling */
         .btn {
-            background-color: #AD5000; /* Orange background for buttons */
-            color: #fff; /* White text for good contrast */
+            background-color: #AD5000;
+            color: #fff;
             border: none;
             padding: 12px 25px;
             font-size: 16px;
             cursor: pointer;
             margin: 10px;
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-
-        /* Button Hover Effect */
         .btn:hover {
-            background-color: #933e00; /* Darker shade of orange when hovered */
+            background-color: #933e00;
         }
-
-        /* Section Styling */
         .description, .contact {
             margin-top: 20px;
-            display: none; /* Hide the sections by default */
+            display: none;
         }
-
-        /* Contact List Styling */
         .contact ul {
             list-style-type: none;
             padding: 0;
             font-size: 16px;
-            color: #444; /* Darker color for contact list items */
+            color: #444;
         }
-
         .contact ul li {
             margin-bottom: 10px;
         }
-
         .contact ul li a {
-            color: #AD5000; /* Accent orange color for links */
+            color: #AD5000;
             text-decoration: none;
             font-weight: bold;
         }
-
         .contact ul li a:hover {
-            text-decoration: underline; /* Underline links when hovered for emphasis */
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Home Section -->
         <div class="home" id="home" style="display: block;">
             <h1>Hi, I'm Gian</h1>
             <img src="pic.jpg" alt="Gian L. Mendiguarin's Profile Photo" class="profile-img">
@@ -126,14 +102,12 @@
             <button class="btn" onclick="toggleSection('contact')">Contact</button>
         </div>
 
-        <!-- About Section -->
         <div class="description" id="about">
             <h2>About Me</h2>
             <p>Hello! My name is Gian L. Mendiguarin, and I’m an Information Technology student at PHINMA University of Pangasinan. I have a strong interest in coding, tech, and mobile gaming, which I discovered in high school. I'm eager to continue learning and developing my skills to contribute to the tech world.</p>
             <button class="btn" onclick="showHome()">Back to Home</button>
         </div>
 
-        <!-- Contact Section -->
         <div class="contact" id="contact">
             <h2>Contact</h2>
             <ul>
@@ -148,21 +122,15 @@
 
     <script>
         function toggleSection(section) {
-            // Hide all sections first
             document.getElementById('home').style.display = 'none';
             document.getElementById('about').style.display = 'none';
             document.getElementById('contact').style.display = 'none';
-            
-            // Show the selected section
             document.getElementById(section).style.display = 'block';
         }
 
         function showHome() {
-            // Hide About and Contact sections
             document.getElementById('about').style.display = 'none';
             document.getElementById('contact').style.display = 'none';
-            
-            // Show Home section
             document.getElementById('home').style.display = 'block';
         }
     </script>
