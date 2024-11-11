@@ -91,7 +91,7 @@
         <div class="description" id="about">
             <h2>About Me</h2>
             <p>Hello! My name is Gian L. Mendiguarin, an Information Technology student currently studying at PHINMA University of Pangasinan. I have a deep passion for technology, including coding, editing, and mobile gaming, which I discovered back in high school. I am constantly seeking opportunities to grow and enhance my technical skills. My journey in IT is focused on using creativity and problem-solving to contribute to the evolving tech industry.</p>
-            <button class="btn" onclick="shoshowHome()">Back to Home</button>
+            <button class="btn" onclick="showHome()">Back to Home</button>
         </div>
 
         <!-- Contact Section -->
@@ -109,7 +109,8 @@
 
     <script>
         function toggleSection(section) {
-            // Hide both sections first
+            // Hide all sections first
+            document.getElementById('home').style.display = 'none';
             document.getElementById('about').style.display = 'none';
             document.getElementById('contact').style.display = 'none';
             
